@@ -1,0 +1,17 @@
+
+.citiesListContainer tr:nth-child(odd){
+  background:rgb(242, 189, 139);
+}
+
+.citiesListContainer tr:nth-child(even){
+  background:#d4d7c7;
+}
+
+.citiesListContainer th{
+  padding: 15px;
+}
+
+.citiesListContainer td{
+  padding: 5px;
+}
+

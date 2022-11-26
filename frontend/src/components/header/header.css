@@ -1,0 +1,17 @@
+header{
+  align-items: center;
+  background-color: coral;
+  display: flex;
+  font-size: 1.5rem;
+  height: 50px;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+header a{
+  border-color: var(--white);
+  color: var(--white);
+  border-radius: 10px;
+  border-style: solid;
+  padding: 0px 10px;
+}

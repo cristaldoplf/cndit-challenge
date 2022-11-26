@@ -1,0 +1,96 @@
+.loginForm-container{
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 600px;
+}
+
+.loginForm h1{
+  color: var(--primary-color);
+  padding-top: 20px;
+}
+
+.loginForm{
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+
+.info-login{
+  background-color: var(--grey);
+  border-color: rgba(128, 128, 128, 0.3);
+  border-radius: 8px;
+  border-style: solid;
+  margin: 8px 0px;
+  padding: 10px 5px;
+  text-align: left;
+  width: 80%;
+}
+
+.buttonsLogin{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 10px;
+  padding-bottom: 10px;
+  width: 80%;
+}
+
+.buttonsLogin input,
+.buttonsLogin a {
+    align-items: center;
+    border-radius: 10px;
+    border-style: solid;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 40px;
+    justify-content: center;
+    width: 48%;
+}
+
+
+.buttonsLogin input{
+  background-color: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+  transition: linear 0.3s;
+}
+.buttonsLogin a {
+  background-color: var(--white);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: linear 0.3s;
+}
+
+.buttonsLogin a:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+  transition: linear 0.3s;
+}
+
+.buttonsLogin input:hover {
+  background-color: var(--white);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: linear 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
