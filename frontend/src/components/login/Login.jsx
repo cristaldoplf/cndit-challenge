@@ -21,7 +21,7 @@ const Register = () => {
           sessionStorage.setItem("jwtToken", JSON.stringify(res.data.token))
           sessionStorage.setItem("userRol", JSON.stringify(res.data.rol.rolName))
           sessionStorage.setItem("userId", JSON.stringify(res.data.id))
-          
+
           navigate('/cities')
         } else {
           console.log("error en la peticion")
@@ -46,6 +46,7 @@ const Register = () => {
       <div className="loginForm-container">
         <form className='loginForm' action="Submit" onSubmit={handleSubmit}>
           <h1>Login</h1>
+          <label htmlFor="email">Email</label>
           <input
             className="info-login"
             type="email"
@@ -55,6 +56,8 @@ const Register = () => {
             value={form.email}
             onBlur={handleBlur}
             onChange={handleChange} />
+
+          <label htmlFor="password">Password</label>
           <input
             className="info-login"
             type="password"

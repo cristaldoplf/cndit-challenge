@@ -36,6 +36,7 @@ const Register = () => {
       <div className="registerForm-container">
         <form className='registerForm' action="Submit" onSubmit={handleSubmit}>
           <h1>Create Account</h1>
+          <label htmlFor="name">Name</label>
           <input
             className="info-register"
             type="text"
@@ -46,8 +47,9 @@ const Register = () => {
             onBlur={handleBlur}
             onChange={handleChange}
           />
-          {errors.name && <p style={styles}>{errors.name}</p>}
 
+
+          <label htmlFor="email">Email</label>
           <input
             className="info-register"
             type="email"
@@ -58,8 +60,10 @@ const Register = () => {
             onBlur={handleBlur}
             onChange={handleChange}
           />
-          {errors.email && <p style={styles}>{errors.name}</p>}
 
+
+
+          <label htmlFor="confirmEmail">Confirm Email</label>
           <input
             className="info-register"
             type="email"
@@ -70,6 +74,8 @@ const Register = () => {
             onBlur={handleBlur}
             onChange={handleChange}
           />
+
+          <label htmlFor="adress">Adress</label>
           <input
             className="info-register"
             type="text"
@@ -79,6 +85,8 @@ const Register = () => {
             value={form.adress}
             onBlur={handleBlur}
             onChange={handleChange} />
+
+          <label htmlFor="password">Password</label>
           <input
             className="info-register"
             type="password"
@@ -88,6 +96,8 @@ const Register = () => {
             value={form.password}
             onBlur={handleBlur}
             onChange={handleChange} />
+
+          <label htmlFor="confirmPassword">Confirm Password</label>
           <input
             className="info-register"
             type="password"
@@ -98,7 +108,7 @@ const Register = () => {
             onBlur={handleBlur}
             onChange={handleChange} />
           <div className="buttonsRegister">
-            <input type="submit" value="Confirm" onClick={handlePost}/>
+            <input type="submit" value="Confirm" onClick={handlePost} />
             <a href="/">Sign In</a>
           </div>
         </form>

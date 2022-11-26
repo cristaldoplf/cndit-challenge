@@ -11,7 +11,7 @@ const Header = () => {
 
     <header>
       <a href="/">Home</a>
-      <a href="/update-user">Control Panel</a>
+      <a href="/update-user">Update User Info</a>
       {sessionStorage.getItem("jwtToken") && sessionStorage.getItem("userRol") && <a href="/cities">Cities List</a>}
       {sessionStorage.getItem("jwtToken") && sessionStorage.getItem("userRol") && <a href="/" onClick={handleClick}>Log Out</a>}
     </header>

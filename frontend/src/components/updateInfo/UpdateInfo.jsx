@@ -36,17 +36,18 @@ const UpdateInfo = () => {
       <div className="registerForm-container">
         <form className='registerForm' action="Submit" onClick={handelSubmit}>
           <h1>Update Adress</h1>
+          <label htmlFor="name">Name </label>
           <input
-            className="info-register"
+            className="info-register not-clickable"
             type="text"
             name="name"
             id="name"
             value={user.name}
             readOnly
           />
-
+          <label htmlFor="email">Email</label>
           <input
-            className="info-register"
+            className="info-register not-clickable"
             type="email"
             name="email"
             id="email"
@@ -54,6 +55,7 @@ const UpdateInfo = () => {
             readOnly
           />
 
+          <label htmlFor="adress">Adress</label>
           <input
             className="info-register"
             type="text"

@@ -34,40 +34,15 @@
   width: 80%;
 }
 
-.registerForm>label{
-  font-size: 0.9rem;
-  margin-top: 10px;
-  padding-left: 27px;
-  position: relative;
+label{
+  align-self: flex-start;
+  padding-left: 11%;
+  margin-bottom: -15px;
+  color: var(--primary-color);
 }
 
 input[type="checkbox"] {
   display: none;
-}
-
-label {
-  margin-top: 10px;
-  position: relative;
-  padding-left: 27px;
-  font-size: 0.9rem;
-}
-
-input[type="checkbox"]:checked+label::before {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  color: white;
-}
-
-label::before {
-  content: "";
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-style: solid;
-  position: absolute;
-  border-color: var(--primary-color);
-  left: 1px;
-  bottom: -1px;
 }
 
 .buttonsRegister{
